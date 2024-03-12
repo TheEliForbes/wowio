@@ -1,10 +1,109 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import { sensitive } from "../sensitive";
+import { BlizzAPI } from "blizzapi";
+// import { CSSProperties } from "react";
 
-export default function Home() {
+export type Dictionary = {
+  [key: string]: any;
+};
+
+//https://www.npmjs.com/package/blizzapi
+const api = new BlizzAPI({
+  region: "us",
+  clientId: sensitive.clientId,
+  clientSecret: sensitive.clientSecret,
+});
+
+async function getData(extendedRoute?: string) {
+  const region = "us";
+  const realmSlug = "stormrage";
+  const characterName = "zarroe";
+
+  const res = await api.query(
+    extendedRoute
+      ? `/profile/wow/character/${realmSlug}/${characterName}${extendedRoute}`
+      : `/profile/wow/character/${realmSlug}/${characterName}`,
+    {
+      params: { locale: "en_US" },
+      headers: { "Battlenet-Namespace": "profile-us" },
+    }
+  );
+  console.log("res", res);
+
+  // The return value is *not* serialized
+  // You can return Date, Map, Set, etc.
+
+  // if (!res.ok) {
+  //   // This will activate the closest `error.js` Error Boundary
+  //   throw new Error("Failed to fetch data");
+  // }
+
+  // return res.json();
+  return res;
+}
+
+export default async function Home() {
+  const data: Dictionary = (await getData()) as any;
+  const mPlusData: Dictionary = (await getData(
+    "/mythic-keystone-profile"
+  )) as any;
+  const mPlusRGB = `rgb(${mPlusData.current_mythic_rating.color.r} ${mPlusData.current_mythic_rating.color.g} ${mPlusData.current_mythic_rating.color.b})`;
+
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
+      <h1>Zarroe.io</h1>
+      <div
+        className={styles.lightened}
+        style={{
+          display: "flex",
+          width: "75vw",
+          height: "75vh",
+          flexDirection: "column",
+        }}
+      >
+        <h3>Summary</h3>
+        <div style={{ display: "flex", height: "fit-content" }}>
+          <Image
+            src="https://render.worldofwarcraft.com/us/character/stormrage/102/245449318-avatar.jpg?alt=/wow/static/images/2d/avatar/4-1.jpg"
+            alt="Character Logo"
+            className={styles.logo}
+            width={50}
+            height={50}
+          />
+          <div className={styles.characterInfoStyle}>
+            <span className={styles.characterName}>{data.name}</span>
+            <br />
+            <span className={styles.characterDetail}>
+              &lt;{data.guild.name}&gt;
+            </span>
+            <br />
+            <span className={styles.characterDetail}>{data.realm.name}</span>
+          </div>
+          <div className={styles.characterInfoStyle}>
+            <span
+              className={styles.characterName}
+              style={{
+                color: mPlusRGB,
+              }}
+            >
+              {Math.floor(mPlusData.current_mythic_rating.rating)}io
+            </span>
+            <br />
+            <span className={styles.characterDetail}>Best M+</span>
+            <br />
+            <span className={styles.characterDetail}>Dragonflight S3</span>
+          </div>
+          <div className={styles.characterInfoStyle}>
+            <span className={styles.characterName}>9/9</span>
+            <br />
+            <span className={styles.characterDetail}>Amirdrassil</span>
+            <br />
+            <span className={styles.characterDetail}>AOTC</span>
+          </div>
+        </div>
+      </div>
+      {/* <div className={styles.description}>
         <p>
           Get started by editing&nbsp;
           <code className={styles.code}>src/app/page.tsx</code>
@@ -89,7 +188,7 @@ export default function Home() {
             Instantly deploy your Next.js site to a shareable URL with Vercel.
           </p>
         </a>
-      </div>
+      </div> */}
     </main>
   );
 }

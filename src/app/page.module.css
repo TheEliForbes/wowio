@@ -1,7 +1,7 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
@@ -77,7 +77,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+  /* position: relative; */
   padding: 4rem 0;
 }
 
@@ -107,7 +107,23 @@
 
 .logo {
   position: relative;
+  margin: 10px;
 }
+
+/* Custom */
+
+.lightened {
+  background-color: #ffffff40;
+}
+
+.characterInfoStyle {
+  flex-direction: column;
+  width: fit-content; 
+  margin: 10px;
+}
+
+
+
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
@@ -212,11 +228,11 @@
 
 @media (prefers-color-scheme: dark) {
   .vercelLogo {
-    filter: invert(1);
+    /* filter: invert(1); */
   }
 
   .logo {
-    filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
+    /* filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70); */
   }
 }
 
