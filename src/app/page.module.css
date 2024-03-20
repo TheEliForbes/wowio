@@ -112,6 +112,28 @@
 
 /* Custom */
 
+.apppanel {
+  display: flex;
+  width: 75vw;
+  min-height: 75vh;
+  height: 100%;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #ffffff40;
+}
+
+.characterData {
+  display: flex;
+  height: fit-content;
+}
+
+.divider {
+  height: 1px;
+  border: 1px solid #ffffff3a;
+  margin: 5px 0 10px 0;
+}
+
 .lightened {
   background-color: #ffffff40;
 }
@@ -120,6 +142,17 @@
   flex-direction: column;
   width: fit-content; 
   margin: 10px;
+}
+
+.raidProgInfo {
+  background-color: #00000077;
+  padding: 8px;
+  border: 1px solid #ffffffaa;
+  border-radius: 4px;
+}
+
+.raidProgInfoNums {
+  font-style: italic;
 }
 
 
