@@ -30,6 +30,7 @@ export const renownData = {
           },
           name: "Deadly Dagger",
           id: 1074,
+          itemId: 216775,
         },
       ],
     },
@@ -43,6 +44,7 @@ export const renownData = {
           },
           name: "Swabbie's Gloves",
           id: 1075,
+          itemId: 216987
         },
         {
           key: {
@@ -63,6 +65,7 @@ export const renownData = {
           },
           name: "Surefooted Boots",
           id: 1076,
+          itemId: 216991
         },
       ],
     },
@@ -76,6 +79,7 @@ export const renownData = {
           },
           name: "Quilted Breeches",
           id: 1077,
+          itemId: 216989
         },
       ],
     },
@@ -89,6 +93,7 @@ export const renownData = {
           },
           name: "Calcified Claymore",
           id: 1078,
+          itemId: 216776
         },
         {
           key: {
@@ -109,6 +114,7 @@ export const renownData = {
           },
           name: "Spun Cotton Shirt",
           id: 1231,
+          itemId: 216988
         },
         {
           key: {
@@ -129,6 +135,7 @@ export const renownData = {
           },
           name: "Skulker's Cloak",
           id: 1232,
+          itemId: 216984
         },
       ],
     },
@@ -142,6 +149,7 @@ export const renownData = {
           },
           name: "Copper Cannon",
           id: 1233,
+          itemId: 216779
         },
       ],
     },
@@ -155,6 +163,7 @@ export const renownData = {
           },
           name: "Warm Woolen Cap",
           id: 1234,
+          itemId: 216994
         },
       ],
     },
@@ -222,6 +231,7 @@ export const renownData = {
           },
           name: "Blacksteel Saber",
           id: 1238,
+          itemId: 216777
         },
       ],
     },
@@ -235,6 +245,7 @@ export const renownData = {
           },
           name: "Silent Leathers",
           id: 1239,
+          itemId: 216992
         },
       ],
     },
@@ -248,6 +259,7 @@ export const renownData = {
           },
           name: "Handwoven Trousers",
           id: 1240,
+          itemId: 216990
         },
       ],
     },
@@ -261,6 +273,7 @@ export const renownData = {
           },
           name: "Marvelous Multi-Shot",
           id: 1241,
+          itemId: 216780
         },
         {
           key: {
@@ -268,6 +281,7 @@ export const renownData = {
           },
           name: "Swarthy Warning Sign",
           id: 1272,
+          itemId: 170197
         },
       ],
     },
@@ -281,6 +295,7 @@ export const renownData = {
           },
           name: "Fine Crimson Doublet",
           id: 1242,
+          itemId: 213436
         },
       ],
     },
@@ -294,6 +309,7 @@ export const renownData = {
           },
           name: "Bloody Iron Cleaver",
           id: 1243,
+          itemId: 216778
         },
       ],
     },
@@ -307,6 +323,7 @@ export const renownData = {
           },
           name: "Weatherproven Drape",
           id: 1244,
+          itemId: 216985
         },
       ],
     },
@@ -340,6 +357,7 @@ export const renownData = {
           },
           name: "Storm Captain's Hat",
           id: 1246,
+          itemId: 216993
         },
       ],
     },
@@ -353,6 +371,7 @@ export const renownData = {
           },
           name: "Plunderlord's Gilded Sigil",
           id: 1247,
+          itemId: 216755
         },
       ],
     },
@@ -366,6 +385,7 @@ export const renownData = {
           },
           name: "Plunderlord's Cuffs",
           id: 1248,
+          itemId: 216731
         },
       ],
     },
@@ -386,6 +406,7 @@ export const renownData = {
           },
           name: "A Tiny Plumed Tricorne",
           id: 1271,
+          itemId: 216907
         },
       ],
     },
@@ -399,6 +420,7 @@ export const renownData = {
           },
           name: "Plunderlord's Golden Cinch",
           id: 1250,
+          itemId: 216732
         },
       ],
     },
@@ -412,6 +434,7 @@ export const renownData = {
           },
           name: "Plunderlord's Pilferers",
           id: 1251,
+          itemId: 216730
         },
       ],
     },
@@ -425,6 +448,7 @@ export const renownData = {
           },
           name: "Plunderlord's Neck-Severer",
           id: 1252,
+          itemId: 216765
         },
       ],
     },
@@ -438,6 +462,7 @@ export const renownData = {
           },
           name: "Plunderlord's Muckscrapers",
           id: 1253,
+          itemId:216733
         },
       ],
     },
@@ -451,6 +476,7 @@ export const renownData = {
           },
           name: "Plunderlord's Fancy Trousers",
           id: 1254,
+          itemId: 216729
         },
       ],
     },
@@ -484,6 +510,7 @@ export const renownData = {
           },
           name: "Plunderlord's Fine Rapier",
           id: 1256,
+          itemId: 216756
         },
       ],
     },
@@ -497,6 +524,7 @@ export const renownData = {
           },
           name: "Plunderlord's Hand Cannon",
           id: 1257,
+          itemId: 216774
         },
       ],
     },
@@ -523,6 +551,7 @@ export const renownData = {
           },
           name: "Plunderlord's Waistcoat",
           id: 1259,
+          itemId: 216735
         },
       ],
     },
@@ -536,6 +565,7 @@ export const renownData = {
           },
           name: "Plunderlord's Drapery",
           id: 1260,
+          itemId: 216728
         },
       ],
     },
@@ -549,6 +579,7 @@ export const renownData = {
           },
           name: "Plunderlord's Silver Cutlass",
           id: 1261,
+          itemId: 216763
         },
       ],
     },
@@ -562,6 +593,7 @@ export const renownData = {
           },
           name: "Plunderlord's Tassled Spaulders",
           id: 1262,
+          itemId: 216727
         },
       ],
     },
@@ -575,6 +607,7 @@ export const renownData = {
           },
           name: "Plunderlord's Tricorne of Admiralty",
           id: 1263,
+          itemId: 216734
         },
         {
           key: {
@@ -582,6 +615,7 @@ export const renownData = {
           },
           name: "Plunderlord's Monocle",
           id: 1311,
+          itemId: 219348
         },
       ],
     },
@@ -622,6 +656,7 @@ export const renownData = {
           },
           name: "Plunderlord's Tabard",
           id: 1312,
+          itemId: 219349
         },
       ],
     },
