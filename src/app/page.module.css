@@ -123,6 +123,18 @@
   background-color: #ffffff40;
 }
 
+.plunderApppanel {
+  display: flex;
+  /* width: 75vw; */
+  width: fit-content;
+  min-height: 75vh;
+  height: 100%;
+  /* flex-direction: column; */
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #ffffff40;
+}
+
 .characterData {
   display: flex;
   height: fit-content;
@@ -130,6 +142,7 @@
 
 .divider {
   height: 1px;
+  width: 100%;
   border: 1px solid #ffffff3a;
   margin: 5px 0 10px 0;
 }
